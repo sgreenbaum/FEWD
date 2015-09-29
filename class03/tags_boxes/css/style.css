@@ -1,0 +1,37 @@
+html{
+	box-sizing: border-box;
+	text-align: center;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+h1{
+	background-color: red;
+	padding: 10px;
+	border: solid black 3px;
+	width: 50%;
+}
+p{ 
+	background-color: blue;
+	color:white;
+	padding: 6px;
+	border: solid black 3px;
+
+}
+code{
+	background-color:white;
+	color:black;
+	padding: 2px;
+	border: solid black 1px;
+}
+h2{
+	color:purple;
+	border: dotted 3px blue;
+	padding: 5px;
+}
+ol{
+	background-color: gray;
+}
+li{
+	line-height: 20px;
+}
