@@ -1,0 +1,53 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.clear {
+	overflow: auto;
+}
+
+header{
+	background: #CCC;
+
+}
+
+article{
+	background: salmon;
+	float: left;
+	width: 66%;
+}
+
+aside{
+	background: turquoise;
+	float: right;
+	width: 34%;
+}
+
+footer{
+	background: yellow;
+	clear: both;
+}
+
+div{
+	border: 1px solid black;
+	padding: 20px;
+	height:150px;
+	margin: 10px;
+}
+
+
+
+
+
+
+
