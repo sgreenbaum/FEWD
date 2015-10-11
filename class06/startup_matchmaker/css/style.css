@@ -1,0 +1,187 @@
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Base Styles */
+
+body{
+
+}
+
+/* Layout */
+
+#container {
+  width: 100%;
+  margin: none;
+  height: 500px;
+}
+
+header{
+     background: black;
+     border-bottom: solid yellow 2px;
+     padding-top: 10px;
+     overflow: auto;
+     line-height: 60%;
+}
+
+article{
+
+
+}
+
+footer{
+     background:black;
+     color: white;
+     clear: both;
+     padding: 20px;
+}
+
+
+/* Additional Styles */
+
+h1{
+     color: yellow;
+     font-family: 'Merriweather', serif;
+     margin-left:20px;
+}
+
+nav{
+     color: white;
+     float: right;
+     display: inline-block;
+     padding-right: 10px;
+     padding-bottom: 20px;
+     margin-right: 10px;
+}
+
+
+.find{
+     font-family: 'Oswald', sans-serif;
+     float:left;
+     padding:8px;
+}
+
+.about{
+     font-family:'Source Sans Pro', sans-serif;
+     float:left;
+     padding:8px;
+}
+
+
+.tagline{
+     background: #ccc;
+     padding: 5px;
+     font-family: 'Merriweather', serif;
+     text-align: center;
+     font-style: italic;
+}
+
+.tagline em{
+     text-decoration: line-through;
+     color: gray;
+}
+
+
+.photobackground{
+     background: url(../images/coworking.jpg) no-repeat center top;
+     background-size: cover;
+     padding-bottom:300px;
+     padding-top: 20px;
+}
+
+.meetyourmatch{
+     border: 1px solid #333;
+     height: 100%;
+     width: 40%;
+     background: rgba(255,255,255,.6);
+     float: right;
+     margin-right: 20px;
+     padding-left: 15px;
+     padding-right: 15px;
+     margin-top: 10px;
+     padding-bottom: 20px;
+}
+
+h3{
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size: 24px;
+}
+
+p{
+     font-family: 'Source Sans Pro', sans-serif;
+     margin-top: -25px;
+     font-size: 16px;
+     line-height: 140%;
+}
+
+.meetyourmatch a{
+     background: yellow;
+     font-family: 'Oswald', sans-serif;
+     text-transform: uppercase;
+     text-decoration: none;
+     color: black;
+     text-align: center;
+     padding: 5px;
+     padding-left: 50px;
+     padding-right: 50px;
+     border-radius: 5px;
+}
+
+.start{
+
+}
+
+.createprofile{
+     float:left;
+     width:30%;
+     padding-left: 20px;
+     padding-right:20px;
+     padding-top: 10px;
+}
+
+.findadeveloper{
+     float:left;
+     width:30%;
+     padding-left: 20px;
+     padding-right:20px;
+     border-right: solid 1px #ccc;
+     border-left: solid 1px #ccc;
+     padding-top: 10px;
+}
+
+.findadesigner{
+     float:left;
+     width:30%;
+     padding-left: 20px;
+     padding-right:20px;
+     padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
