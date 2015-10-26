@@ -1,0 +1,49 @@
+target_temperature = 72
+
+current_temperature = get_current_temperature
+
+repeat
+	if current_temperature < target_temperature - 5
+		turn_heater_on
+
+	if current_temperature >= target_temperature
+		turn_heater_off
+
+
+
+/********ROCK,PAPER,SCISSORS*********/
+
+rock > scissors > paper
+scissors > paper > rock
+
+repeat 3x
+	if (player_1 shoots rock) + (player_2 shoots scissors)
+		player_2_loses
+
+	if (player_1 shoots scissors) + (player_2 shoots paper)
+		player_1_wins
+
+	if (player_1 shoots scissors) + (player_2 shoots scissors)
+		player_1 and player_2 tie
+
+	if (player_1 shoots rock) + (player_2 shoots paper)
+		player_2_wins
+
+	if (player_1 shoots rock) + (player_2 shoots rock)
+		player_1 and player_2 tie
+
+	if (player_1 shoots paper + (player_2 shoots paper)
+		player_1 and player_2 tie
+
+count number wins for each player
+if player_1 wins > player_2
+	player_1 wins the game
+else
+	player_2 wins the game
+
+
+
+
+
+
+
