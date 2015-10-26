@@ -24,4 +24,9 @@ $(document).ready(function(){
 		$('.readless').hide();
 	});
 
+	$('.learnmore').click(function(){
+		$('#learnmoretext').slideDown();
+		$('.learnmore').hide();
+	});
+
 })
