@@ -1,10 +1,10 @@
 $document.ready(function(){
 	//When user clicks the submit button, the background city will change.
-	$('#submit-btn').click(changeCity);
+	$('#entry').submit(changeCity);
 	//Variable storing Farenieht
   	var city;
 
-  		function changeCity{
+  		function changeCity(){
   			
   			//Stop the form from submitting
     		event.preventDefault();
@@ -12,17 +12,16 @@ $document.ready(function(){
     		//Defines the value of city based on the user input
     		city = $('#city-type').val();
 
-    			if (city = New York or New York City or NYC){
-    				$('body').css('background', '.nyc')
-    			}if (city = San Francisco or sf or Bay Area){
-    				$('body').css('background', '.sf')
-    			}if (city = Los Angeles or la or lax){
-    				$('body').css('background', '.la')
-    			}if (city = Austin or ATX){
-    				$('body').css('background', '.austin')
-    			}if (city = Sydney or SYD){
-    				$('body').css('background', '.sydney')
-  		}
-
-
+    			if (city === 'New York'){
+    				$('body').css('background', 'url(images/nyc.jpg)');
+    			}if (city = San Francisco){
+    				$('body').css('background', 'url(images/sf.jpg)');
+    			}if (city = Los Angeles){
+    				$('body').css('background', 'url(images/la.jpg)');
+    			}if (city = Austin){
+    				$('body').css('background', 'url(images/austin.jpg)');
+    			}if (city = Sydney){
+    				$('body').css('background', 'url(images/austin.jpg)');
+          }		
+      }
 });
