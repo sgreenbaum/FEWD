@@ -1,27 +1,24 @@
-$document.ready(function(){
-	//When user clicks the submit button, the background city will change.
-	$('#entry').submit(changeCity);
-	//Variable storing Farenieht
-  	var city;
-
-  		function changeCity(){
-  			
+$(document).ready(function(){
+	//When user clicks the submit button, we get the city that the user entered and test to see what the city is. If the city is New York update the backgrounf to  the New York images. If the cit yis San Francisco...
+	
+  $('#submit-btn').click(changeCity);
+	
+  		function changeCity(event){
   			//Stop the form from submitting
     		event.preventDefault();
+        //Variable storing city info. Defines the value of city based on the user input.
+        var city = $('#city-type').val();
 
-    		//Defines the value of city based on the user input
-    		city = $('#city-type').val();
-
-    			if (city === 'New York'){
-    				$('body').css('background', 'url(images/nyc.jpg)');
-    			}if (city = San Francisco){
-    				$('body').css('background', 'url(images/sf.jpg)');
-    			}if (city = Los Angeles){
-    				$('body').css('background', 'url(images/la.jpg)');
-    			}if (city = Austin){
-    				$('body').css('background', 'url(images/austin.jpg)');
-    			}if (city = Sydney){
-    				$('body').css('background', 'url(images/austin.jpg)');
+    			if (city === "New York" || city === "NYC" || city === "New York City"){
+    				$('body').attr('class', 'nyc');
+    			}if (city === "San Francisco" || city ==="SF" || city === "Bay Area"){
+    				$('body').attr('class', 'sf');;
+    			}if (city === "Los Angeles" || city === "LA" || city === "LAX"){
+    				$('body').attr('class', 'la');
+    			}if (city === "Austin"){
+    				$('body').attr('class', 'austin');
+    			}if (city === "Sydney"){
+    				$('body').attr('class', 'sydney');
           }		
       }
 });
