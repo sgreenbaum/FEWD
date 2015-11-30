@@ -1,0 +1,57 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<title>Course Application</title>
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<h1>Your Contact Info</h1>
+			<form>
+				<fieldset>
+						<legend>Your Name</legend>
+			        	<input type="text" name="firstname" placeholder="First"></input>
+			        	<input type="text" name="lastname" placeholder="Last"></input> 
+			   </fieldset>
+		
+				<fieldset>
+					<legend>Phone Number</legend>
+			        	<input type="text" name="number1" maxlength="4"></input> &mdash;
+			        	<input type="text" name="number2" maxlength="3"></input> &mdash;
+			        	<input type="text" name="number3" maxlength="3"></input>		   	
+				</fieldset>
+
+		
+				<h1>Skills &amp; Interests</h1>
+					<label for="course">Course</label>
+						<select name="course" class="course">
+							  <option value="selectone">Select one</option>
+							  	<optgroup label="Web Development">
+									  <option value="frontend">Front-end</option>
+									  <option value="backend">Back-end</option>
+							  	</optgroup>
+							  	<optgroup label="Design">
+									  <option value="visualdesign">Visual Design</option>
+									  <option value="userex">User Experience</option>
+								</optgroup>					
+						</select>
+
+				<h2 class="past clear">Past Experience</h2>
+					<textarea name="pastExperience" class="pastExperience"></textarea>
+
+		
+				<div class="save">
+            			<button value="Save Draft">Save Draft</button>
+            	</div>
+				<div class="submit">
+            			<input id="submit" name="submit" type="submit" value="Submit"></input>
+            	</div>
+            
+            </form>
+
+
+
+	</body>
+</html>
