@@ -14,9 +14,11 @@
 			<header>
 				<h1>SOPHIA GREENBAUM</h1>
 				<h2>I make sh*t shine.</h2>
-				<a href="#navLinks">
-					<img class="logo1" src="images/header_downbutton.png">
-				</a>
+					<div class="scrolldown">
+						<a href="#navLinks">
+							<img class="downbutton" src="images/header_downbutton.png">
+						</a>
+					</div>
 			</header>
 
 			
@@ -32,7 +34,7 @@
 			</nav>
 
 			<section id="about" class="clearfix">	
-				<h1>HERE ARE SOME THINGS TO KNOW</h1>
+				<h1>VERBS TO LIVE BY</h1>
 
 				<div class="icons">	
 					<div id="build">
@@ -57,7 +59,9 @@
 
 			<section id="infographics">
 				<h1>PROFILE (AS TOLD BY INFOGRAPHICS)</h1>
-					<img src="images/infographics.png">
+					<div id="profile">
+						<img src="images/infographics.png" id="peeps">
+					</div>
 			</section>
 
 			<section id="portfolio">
@@ -278,8 +282,8 @@
 					 		<h5> A map design for the city of Ann Arbor. 2013.
 							</h5>
 					 		<div class="content">
-					       			<img src="images/AnnArborMap.jpg">			
-					    	</div>
+					       			<img src="images/AnnArborMap.jpg">
+				       		</div>
 					    	
 					    	<a id="prev" href="#project6">PREVIOUS</a>
     						<a id="next" href="#project8">NEXT</a>
@@ -291,7 +295,7 @@
 
 					<!-- thumbnail -->
 
-					<a href="#">
+					<a href="#project8">
 						<div class="project8">
 							<p>Waster. Poster.</p>
 						</div>
@@ -441,7 +445,7 @@
 
 			<section id="contact" class="clear">
 				<h1>WANT MORE?</h1>
-				<form method="post">
+				<form method="post" action="email.php">
 					<div class="name">
 			        	<input name="name" placeholder="Name"></input>
 			    	</div>
@@ -471,9 +475,7 @@
         				<img src="images/instagram.png" class="instagram">
         			</a>
         		</div>
-	        	
         		
-        		<img src="images/logo1.png" class="footerlogo">
 
         		<h4>Website designed and developed by Sophia Greenbaum. 2015.</h4>
         	</footer>
